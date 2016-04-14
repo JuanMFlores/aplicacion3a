@@ -1,0 +1,646 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Tercera Aplicacion</title>
+  <!--GRUPO CSS-->
+  <link rel="stylesheet" href="css/temasapp3.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+  
+  <!-- GRUPO JAVASCRIPT-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js"></script>
+  <script src="phonegap.js" type="text/javascript"></script>
+  
+  <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+
+</head> <!-- Cierra el head -->
+
+<body> <!-- Abre el primer body-->
+  <div data-role="page" id="Principal" data-theme="a"> <!-- div 2 -->
+    <div data-role="header" data-add-back-btn="true"  data-back-btn-text="Regresar" data-back-btn-theme="a"> <!-- div 3 -->
+      <h1>Volcan Popocatepetl</h1>
+    </div> <!-- cierra div 3 -->
+    
+    <div data-role="main" class="ui-content"> <!-- div 4 -->
+      <div data-role="collapsible" data-content-theme="false"> <!-- div 5 -->
+        <h1> Informacion Volcan Popocatepetl </h1>
+        <div> <!-- div 6 -->
+          <p>
+            El Popocatépetl (en náhuatl: popocatepetl, ‘el cerro que humea’‘popoca, humear; tepetl, cerro’) 
+            Tiene una forma cónica simétrica y está unido por la parte norte con el Iztaccíhuatl mediante 
+            un paso montañoso conocido como Paso de Cortés. El volcán tiene glaciares perennes cerca de la 
+            boca del cono, en la punta de la montaña.
+          </p>
+          <div align="center">  <!-- div 7.3 -->
+            <p><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image2','','imagenes/volcan 1.jpg',1)">
+            <img src="imagenes/volcan 22.jpg" width="50%" height="50%" id="Image2" /></a></p>
+          </div> <!-- cierra div 7.3 -->
+          <p> 
+            El Popocatépetl es un volcán activo, que actualmente se encuentra restringido el acceso a público
+            en general, solo se permite el ascenso a profesionistas y personal de protección civil, previa 
+            identificación y elaboración de un permiso; especificando objetivos así como certificando la 
+            personalidad y capacidad del solicitante. Se mantiene un monitoreo continuo de la actividad 
+            volcánica, para poder alertar y dar protección a los habitantes de poblados vecinos. Para los 
+            amantes de la naturaleza, puedes acudir al Parque Nacional de Iztaccíhuatl Popocatépetl donde 
+            puedes realizar diversas actividades como ciclismo de montaña y si te gustan los deportes extremos 
+            como el alpinismo y traes tu equipo adecuado puedes hacerlo en el volcán de Iztaccíhuatl, y si solo 
+            deseas pasar un día agradable una caminata donde encontraras bellos parajes y bosques donde habitan 
+            venados de cola blanca, conejos, zorrillos, ardillas y los meses ideales para visitar es lugar son de 
+            noviembre a marzo. 
+          </p>
+          <div align="center">  <!-- div 7.1 -->
+            <img src="imagenes/volcan 2.jpg" width="60%" height="60%" >
+          </div> <!-- cierra div 7.1 -->
+          <p>
+            Según la leyenda colonial el Popocatépetl fue un guerrero legendario llamado Popoca que al regresar 
+            victorioso del campo de batalla se encuentra con la inesperada muerte de su princesa amada, tras lo 
+            cual sube al pináculo del templo con ella en sus brazos y se entregan a sí mismos como ofrendas a los 
+            dioses. El nombre náhuatl o prehispánico que recibe el popacatepetl es el xalitlehua.
+          </p>
+        </div> <!-- cierra div 6 -->
+        <div align="center">  <!-- div 7.2 -->
+          <p><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image6','','imagenes/volcan 3.jpg',1)">
+            <img src="imagenes/volcan 25.jpg" width="60%" height="60%" id="Image6" /></a></p>
+        </div> <!-- cierra div 7.2 -->
+      </div><!-- cierra div 5 -->
+    </div> <!-- cierra div 4 -->
+    
+    <div data-role="main" class="ui-content"> <!-- div 4.1 -->
+      <div data-role="collapsible" data-content-theme="false"> <!-- div 5.1 -->
+        <h1> Tamaño </h1>
+        <div> <!-- div 6.1 -->
+          <p>
+           De apariencia casi simétrica, cubre una superficie de 283,192.53 hectáreas y tiene una 
+           altura de 5,426 metros sobre el nivel del mar. Posee un cráter elíptico de paredes 
+           empinadas con una profundidad de 150 metros desde el labio inferior, un diámetro 
+           mayor de 900 metros y un ancho total de 400 x 600 metros.
+           La distancia entre las paredes de su cráter oscila entre los 660 y los 840 metros.
+          </p>
+        </div> <!-- cierro div 6.1 -->
+          <div align="center">  <!-- div 7.1.1 -->
+            <p><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image3','','imagenes/volcan 4.jpg',1)">
+            <img src="imagenes/volcan-21.jpg" width="60%" height="60%" id="Image3" /></a></p>
+          </div> <!-- cierra div 7.1.1 -->
+      </div><!-- cierra div 5.1 -->
+    </div> <!-- cierra div 4.1 -->
+    
+    <div data-role="main" class="ui-content"> <!-- div 4.2 -->
+      <div data-role="collapsible" data-content-theme="false"> <!-- div 5.2 -->
+        <h1> Localizacion </h1>
+        <div> <!-- div 6.2 -->
+          <p>
+            El Popocatépetl esta ubicado en los estados de Morelos, Puebla (45 kilometros) y el Estado de 
+            México( a 55 kilometros). Al sur de la Sierra Volcánica Transversal que constituye la espina 
+            dorsal del Altiplano Mexicano. En el Estado de México colinda con los municipios: Tlamanalco, 
+            Amecameca, Atlauta y Ecatzingo. Con el estado de Morelos colinda específicamente con el 
+            municipio de Tetela del Volcán. Por la parte de Puebla colinda con Huejotzingo, San Salvador 
+            el Verde, Domingo Arenas, San Nicolás de los Ranchos y Tochimilco.
+          </p>
+        </div> <!-- cierra div 6.2 -->
+        <div align="center">  <!-- div 7.4.4 -->
+          <p><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image4','','imagenes/volcan 5.jpg',1)">
+            <img src="imagenes/volcan 23.jpg" width="60%" height="60%" id="Image4" /></a></p>
+        </div> <!-- cierra div 7.4.4 -->
+      </div><!-- cierra div 5.2 -->
+    </div> <!-- cierra div 4.2 -->
+    
+    <div data-role="main" class="ui-content"> <!-- div 4.1 -->
+      <div data-role="collapsible" data-content-theme="false"> <!-- div 5.1 -->
+        <h1> Antigüedad </h1>
+        <div> <!-- div 6.1 -->
+          <p>
+            Geológicamente es un estratovolcán, y los estudios paleomagnéticos que se han hecho de él 
+            indican que tiene una edad aproximada de 730 000 años.El Popocatepetl ha permanecido 
+            desde siempre en actividad a pesar de haber estado, durante buena parte de la segunda 
+            mitad del siglo XX, en reposo. De hecho, en 1991 se inició un incremento en su 
+            actividad y a partir de 1993 las fumarolas eran ya claramente visibles desde 50 
+            kilómetros alrededor del cráter. Existen registros desde la antigüedad sobre 
+            los periodos de actividad del volcán, como una erupción en 1927, que fue artificialmente 
+            provocada por la dinamitación del cráter para extraer azufre del mismo.
+          </p>
+          <div align="center">  <!-- div 7.5.4 -->
+            <p><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image5','','imagenes/volcan 6.jpg',1)">
+            <img src="imagenes/volcan 24.jpg" width="60%" height="60%" id="Image5" /></a></p>
+          </div> <!-- cierra div 7.5.4 -->
+          <h4> El Popocatépetl antes de la Colonia. </h4>
+          <p>
+            El volcán, durante el tiempo prehispánico, era una deidad mexica a la que se dedicaba 
+            un culto exclusivo. Hoy día el culto sobrevive en forma minoritaria o simbólica; los 
+            guardianes del volcán son llamados temperos del volcán Popocatépetl, quienes se refieren 
+            a él como don Goyo o Serafín, personificándolo en un indígena.
+            <br>
+            Los temperos celebran ritos en los santuarios consagrados al Popocatépetl, ubicados 
+            en las cañadas y zonas boscosas de las faldas del volcán, para solicitar la bendición 
+            de la lluvia así como la protección del dios frente al granizo para sus cosechas.
+          </p>
+          <div >  <!-- div 7.5.5 -->
+            <img src="imagenes/volcan 7.jpg" width="43%" height="40%" >
+            <img src="imagenes/volcan 8.jpg" width="48%" height="40%" >
+          </div> <!-- cierra div 7.5.5 -->
+          <h4> La leyenda del Popocatépetl y el Iztaccíhuatl. </h4>
+          <p>
+            En la mitología mexica, Popocatépetl fue un valiente guerrero quién amaba a la doncella Iztaccíhuatl. 
+            Sin embargo existen diversas versiones de la misma leyenda, las cuales coinciden en un guerrero 
+            legendario llamado Popoca que al regresar victorioso del campo de batalla se encuentra con la inesperada 
+            muerte de su princesa amada, tras lo cual sube al pináculo del templo con ella en brazos y se entregan a sí mismos 
+            como ofrendas a los dioses; los dioses aceptan el sacrificio de su amor no consumado, y para conservarlos inmortales 
+            y eternos, deciden transformarlos en volcanes. Este es el origen mitológico del volcán Popocatépetl.
+            <br>
+            Otra versión dice que el padre de Iztaccíhuatl (Tezozómoc) mandó a Popoca a la guerra en Oaxaca, prometiéndole 
+            la mano de su hija si este regresaba victorioso (lo cual el padre de Iztaccíhuatl supuestamente no creía posible). 
+            Iztaccíhuatl recibió noticias de que su amado había muerto en batalla y ella murió de pena. Cuando Popoca regresó 
+            y se enteró del trágico destino de su amada, él también murió de tristeza por haberla perdido. Los dioses se 
+            conmovieron y los cubrieron con nieve para transformarlos en volcanes.
+          </p>
+          </div> <!-- cierra div 6.1 -->
+          <div align="center">  <!-- div 7.5.4 -->
+            <img src="imagenes/volcan 9.jpg" width="60%" height="60%" >
+          </div> <!-- cierra div 7.5.4 -->
+      </div><!-- cierra div 5.1 -->
+    </div> <!-- cierra div 4.1 -->
+    
+    <div> <!-- div 8 -->
+      <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">  <!-- habre ul de botones en lista -->
+        <li class="ui-first-child ui-last-child"> <!-- habre li pagina 1 -->
+          <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <h2>Actividad Volcanica</h2>
+            <p>Cuantas veces ha hecho erupcion </p>
+          </a>
+        </li><!-- Cierra li pagina 1 -->
+        <li class="ui-first-child ui-last-child"> <!-- habre li pagina 1 -->
+          <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <h2>Monitereo del volcan Popocatepetl</h2>
+          </a>
+        </li><!-- Cierra li pagina 1 -->
+        <li class="ui-first-child ui-last-child"> <!-- habre ul de botones en lista -->
+          <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <h2>Medidas de Prevencion</h2>
+            <p>en caso de caida de ceniza y erupcion</p>
+          </a>
+        </li> <!-- habre ul de botones en lista -->
+        <li class="ui-first-child ui-last-child"> <!-- habre ul de botones en lista -->
+          <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <h2>Estados que afectaria</h2>
+            <p>En caso de una explocion fuerte</p>
+          </a>
+        </li> <!-- habre ul de botones en lista -->
+        <li class="ui-first-child ui-last-child"> <!-- habre ul de botones en lista -->
+          <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <h2>Volcanes del mundo</h2>
+            <p>Solo se muestran de dos volcanes</p>
+          </a>
+        </li> <!-- habre ul de botones en lista -->
+      </ul> <!-- cierra ul de botones en lista -->
+    </div> <!-- cierra div 8 -->
+    <div data-role="footer" align="center" data-theme="a"> <!-- habre div del footer -->
+      <div>
+        <img src="imagenes/montana.png" width="80" height="80">
+      </div>
+      <div>
+        <h4>Aplicacion Tres</h4>
+        <h4> Juan Manuel Flores Bravo</h4>
+      </div>
+    </div> <!-- Cierra div del footer -->
+  </div> <!-- cierra div 2 -->
+  
+  <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a"> <!--div pagina 1 -->
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a"> <!-- 1 -->
+      <h1>Actividad del volcan Popocatepetl</h1>
+    </div> <!-- 1 -->
+    <div data-role="content" > <!-- 2 -->
+      <p>
+        El Popocatépetl ha estado desde siempre en actividad, a pesar de haber estado en reposo 
+        durante buena parte de la segunda mitad del siglo XX. En 1991 se inició un incremento 
+        en su actividad y a partir de 1993 las fumarolas eran ya claramente visibles desde 
+        distancias de alrededor de 50 kilómetros.
+        <br>
+        El Popocatépetl ha sido uno de los volcanes más activos de México. Desde 1354 se han registrado 
+        18 erupciones:
+      </p>
+      <p>
+        1.- En 1947 ocurrió una erupción de consideración, para iniciar así un periodo de 
+        actividad. 
+        <br>
+        <br>
+        2.- Después, el 21 de diciembre de 1994 registró una explosión que produjo gas y cenizas 
+        que fueron transportados por los vientos dominantes a más de 25 km de distancia. Actualmente su 
+        actividad es moderada, pero constante, con emisión de fumarolas, compuestas de gases y vapor de 
+        agua, y repentinas e imprevistas expulsiones menores de ceniza y material volcánico. 
+        <br>
+        <br>
+        3.- La última erupción violenta del volcán se registró en diciembre de 2000, lo que, siguiendo las predicciones 
+        de científicos, motivó la evacuación de miles de personas en las áreas cercanas al volcán. 
+        <br>
+        <br>
+        4.- El 25 de diciembre de 2005 se produjo en el cráter del volcán una nueva explosión, que provocó una 
+        columna de humo y cenizas de tres kilómetros de altura y la expulsión de lava. 
+        <br>
+        <br>
+        5.- Posteriormente en la mañana del 3 de junio de 2011, el Popocatépetl volvió a emitir grandes fumarolas sin 
+        causar daños. 
+        <br>
+        <br>
+        6.- El 20 de noviembre de 2011 tuvo lugar una gran explosión que hizo temblar la 
+        tierra, escuchándose en las poblaciones cercanas a las laderas, pero sin mayor alteración. 
+        <br>
+        <br>
+        7.- El volcán registró la mañana del 16 de enero de 2012 una fumarola de vapor de agua y ceniza, sin 
+        que esto represente riesgos para la población aledaña al coloso. 
+        <br>
+        <br>
+        8.-  El 16 de abril de 2012 el CENAPRED (Centro Nacional Para la Prevención de desastres), elevó el 
+        semáforo de alerta volcánica de fase amarillo 2 a fase amarillo 3 debido a la gran actividad que se 
+        ha estado presentando, sin que hasta el momento represente un peligro grave para la sociedad. 
+        <br>
+        <br>
+        9.- A las 3:23 del 30 de abril de 2013, el volcán Popocatépetl arrojó fragmentos incandescentes a 800 metros 
+        del cráter sobre la ladera noreste, informó el Centro Nacional de Prevención de Desastres (CENAPRED). 
+        <br>
+        <br>
+        10.- El 12 de mayo de 2013, luego del fuerte estruendo que se sintió en la localidad de Atlixco, la 
+        Coordinación Nacional de Protección Civil de la Secretaría de Gobernación, informó un cambio en el 
+        semáforo de la alerta  volcánica, de amarillo fase 2 a fase 3 debido al incremento en la actividad del 
+        Volcán, por lo que entró en acción el Plan Operativo Popocatépetl, A través de un comunicado, la SEGOB 
+        dio a conocer que en una reunión con el Comité Científico Asesor, en el Centro Nacional de Prevención de Desastres 
+        (CENAPRED), que debido a que las dos semanas anteriores se observaron explosiones, eventos vulcano-tectónicos, 
+        episodios de tremor y trenes de exhalaciones, el Comité concluyó por consenso, emitir la recomendación.
+        <br> 
+        <br>
+        11.- Sin embargo el 2 de junio de 2013 el CENAPRED regresó el nivel de alerta a Amarillo fase 2. 
+        <br>
+        <br>
+        12.- Los días 17 y 18 de junio el volcán registró varios eventos explosivos de mayor magnitud, registrando Fumarolas que 
+        alcanzaron los 4 km sobre el nivel del cráter y expulsiones de roca incandescente que alcanzaron las 
+        faldas en el lado Sur-Oeste del coloso. La alerta se mantuvo en Amarillo Fase 2. 
+        <br>
+        <br>
+        13.- El volcán entró en actividad el 7 de julio de 2013, lanzando ceniza claramente visible en poblaciones cercanas, la ceniza 
+        también alcanzó la Ciudad de México, expulsando flujos piroclásticos e incandescencia. El semáforo 
+        volcánico se sitúa en amarillo fase 3.
+        <br>
+        <br>
+        14.- A las 22:30 del 4 de noviembre ya era visible una gran columna de humo sobre el volcán la cual terminó a la 1:15 
+        de la mañana, durante este periodo de tiempo se observaron diversas explosiones que contenían material incandescente, 
+        vapor de agua, pequeñas cantidades de ceniza a las 11:45 pm el CENAPRED declaró que el volcán había entrado en un 
+        estado eruptivo, pero que esas pequeñas erupciones estaban previstas en el nivel de alerta volcánica AMARILLO Fase 2 
+        por lo que no era necesario modificar el nivel de alerta. Durante esta actividad no hubo lesionados y ningún 
+        incidente ya que la ceniza y material incandescente cayó únicamente en el Paso de Cortés.
+      </p>
+      <div align="center"> <!-- 4 -->
+        <img src="imagenes/volcan 19.jpg" width="45%" height="45%">
+        <img src="imagenes/volcan 20.jpg" width="45%" height="45%">
+      </div><!-- 4 -->
+      </div>
+      <div data-role="footer" data-theme="a">
+        <h4>Juan Manuel Flores Bravo</h4>
+      </div>
+    </div><!-- 2 -->
+  </div> <!--div pagina 1 -->
+    
+  <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a"> <!--div pagina 1 -->
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a"> <!-- 1 -->
+      <h1> Descripción del Monitoreo Volcánico</h1>
+    </div> <!-- 1 -->
+    <div data-role="content" > <!-- 2 -->
+      <div align="center"> <!-- 3 -->
+        <h2> Monitoreo y vigilancia del volcán Popocatépetl</h2>
+      </div> <!-- 3 -->
+      <p>
+         Cuatro tipos de monitoreo se han establecido en el volcán: visual, sísmico, geodésico 
+         y geoquímico, de los cuales el más importante es el sísmico. La red de monitoreo del 
+         Popocatépetl está compuesta por 15 estaciones localizadas en las laderas circundantes 
+         del volcán en sitios con altitudes de hasta 4300 m y a 1.5 km del cráter. La 
+         instrumentación consta de 8 sismógrafos triaxiales de periodo corto, 4 de banda ancha, 
+         4 inclinómetros biaxiales para medir deformación, una cámara de video con enlace de
+         microondas, un radar doppler meteorológico y diversos equipos para mediciones geodésicas, 
+         análisis químicos y determinación de las concentraciones de gases SO2 y CO2. Más de 50 
+         señales de telemetría son trasmitidas en forma continua hacia un puesto central de registro 
+         y procesamiento localizado en el CENAPRED. Allí y mediante una extensa red de computadoras, 
+         la actividad es monitoreada y procesada las 24 horas del día. Al detectarse cualquier 
+         incremento anormal de la actividad sísmica del volcán, se activa un sistema de alarma 
+         acústica y a través de un sistema de marcado automático se envian mensajes a teléfonos 
+         particulares celulares y localizadores del personal de guardia . Del análisis de la 
+         información, las recomendaciones relativas al nivel de alertamiento son tomadas por el 
+         Comité Técnico Científico Asesor, integrado por eminentes investigadores de la UNAM y 
+         del CENAPRED. Mediante reportes especiales, autoridades del gobierno y de Protección 
+         Civil son informadas periódicamente acerca del nivel de actividad del volcán. Para el 
+         público en general se dispone de un buzón telefónico con mensajes sobre su estado de 
+         actividad. Con la participación de diversas instituciones y un enorme esfuerzo realizado 
+         por parte del personal encargado, se ha logrado en un plazo corto, poner en operación una 
+         extensa infraestructura de registro y monitoreo que permite ya la vigilancia estrecha del 
+         volcán así como la detección oportuna de cualquier cambio en su estado de actividad.
+      </p>
+      <div align="center"> <!-- 4 -->
+        <img src="imagenes/volcan 17.png" width="60%" height="60%">
+      </div><!-- 4 -->
+      <p>
+         La observación y vigilancia de un volcán activo usualmente se lleva a cabo utilizando 
+         técnicas de telemedición o telemetría mediante las cuales las señales medidas en las 
+         estaciones remotas se trasmiten por radio hacia un puesto central para su registro 
+         continuo e inmediata evaluación. La red del Popocatépetl, actualmente en operación, 
+         consta de 12 estaciones remotas y una estación central de adquisición y procesamiento 
+         de datos localizada en las instalaciones del CENAPRED. Las estaciones de campo están 
+         instaladas en las faldas alrededor del volcán en altitudes entre los 2500 y 4313 m, 
+         estando la más cercana a 2 km de distancia del cráter. El sistema consiste de 5 
+         estaciones con sismómetros de periodo corto, 5 estaciones con sismómetros de banda 
+         ancha, 3 estaciones con inclinómetros, 3 estaciones hidrométricas y de detección de 
+         flujos y 4 estaciones con una cámara de video para la observación remota del volcán. 
+         Este conjunto de instrumentos sísmicos, geodésicos e hidrométricos genera más de 40 
+         señales las cuales son trasmitidas continuamente, las 24 horas del día, hacia el 
+         CENAPRED y algunas también a la UNAM. Para llevar esta información desde cualquier 
+         sitio del volcán hacia el puesto central se implementó una compleja red de enlaces 
+         de telemetría a través de radio. Las señales de las estaciones más lejanas ubicadas 
+         en el lado este del volcán, se retransmiten a través de varias estaciones repetidoras 
+         (IIA e IIB). Para proteger a los equipos del medio ambiente, particularmente severo en 
+         las estaciones altas, y también proteger al personal encargado de su operación y 
+         mantenimiento, se construyeron casetas especiales de concreto y mampostería.
+      </p>
+      <a href="http://www.cenapred.unam.mx:8080/monitoreoPopocatepetl/">Click aqui para saber sobre el monitoreo del volcan Popocatepetl</a>
+      <div align="center"> <!-- 4 -->
+        <img src="imagenes/volcan 18.png" width="50%" height="50%">
+      </div><!-- 4 -->
+      </div>
+      <div data-role="footer" data-theme="a">
+        <h4>Juan Manuel Flores Bravo</h4>
+      </div>
+    </div><!-- 2 -->
+  </div> <!--div pagina 1 -->   
+  
+  <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a"> <!--div pagina 1 -->
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a"> <!-- 1 -->
+      <h1>Como prevenir</h1>
+    </div> <!-- 1 -->
+    <div data-role="content" > <!-- 2 -->
+      <div> <!-- 3 -->
+        <h2> Que hacer en caso de caida de ceniza</h2>
+      </div> <!-- 3 -->
+      <p>
+        Las recomendaciones que hace Protección Civil son:
+        <br>
+        <br>
+        1.- Proteger ojos, nariz y boca, si tenemos necesidad de salir a la intemperie.
+        <br>
+        2.- Evitar hacer ejercicio.
+        <br>
+        3.- Cerrar puertas y ventanas y sellar con trapos húmedos las rendijas y las ventilas, para limitar la entrada del polvo a casas y edificios.
+        <br>
+        4.- Sacudir la ceniza con plumeros para que no se rayen las superficies.
+        <br>
+        5.- Tapar tinacos y otros depósitos para que no se ensucien.
+        <br>
+        6.- Cubrir aparatos, para que no se deterioren ni rayen.
+        <br>
+        7.- Cubrir coladeras de patios y azoteas para evitar que se tape el drenaje
+        <br>
+        8.- Tratar de que circule la menor cantidad posible de automóviles.
+        <br>
+        9.- Ser precavidos y pacientes, porque el tráfico puede volverse lento al ponerse resbaloso del piso.
+        <br>
+        <br>
+        En caso de caída de ceniza, es sumamente importante quitarla continuamente, para evitar que se acumulen en 
+        techos ligeros, (de lámina de asbesto, cartón,  triplay, lona y otros parecidos) porque pueden hacer que se 
+        colapsen por el exceso de peso, como pasa con el granizo.
+        <br>
+        Si la ceniza se moja, aumentaría de peso como si fuera una losa de cemento, por lo que no debemos 
+        tratar de quitarla con agua. Como dato: 1 centímetro de espesor de ceniza seca, en un metro cuadrado, 
+        pesa hasta 20 kilogramos.
+        <br>
+        Es recomendable recoger en costales o bolsas de plástico las cenizas que se acumulen en los techos, 
+        suelos y calles para que no se tape el drenaje.
+      </p>
+      <div> <!-- 4 -->
+        <img src="imagenes/volcan 10.jpg" width="40%" height="40%">
+        <img src="imagenes/colcan 11.jpg" width="42%" height="40%">
+      </div><!-- 4 -->
+      <div> <!-- 3 -->
+        <h2> Que hacer en caso de caida de erupcion volcanica</h2>
+      </div> <!-- 3 -->
+      <p>
+        Los volcanes pueden ser peligrosos si entran en erupción. Pueden arrojar gases, rocas, ceniza y lava.  
+        Algunos pueden lanzar piedras y golpear a la gente, dañar los techos de las casas, bloquear caminos y 
+        daños en la agricultura.  En otras ocasiones, pueden producir lluvias de ceniza, a veces acompañadas de 
+        gases tóxicos que producen quemaduras en la piel, impiden la respiración e irritan los ojos. También 
+        pueden bajar flujos de lava, normalmente a poca velocidad, que destruyen todo a su paso. Por los cauces 
+        de los ríos situados en las faldas del volcán, puede bajar lodo, piedras, árboles.
+        <br>
+        Elaboremos juntos el plan familiar de emergencias. Es sencillo y puede salvar la vida de nuestra familia.
+        <br>
+        1.- Con los miembros de la familia preparemos el maletín para emergencias, con alimentos no perecederos, 
+            radio, foco, documentos personales, medicinas y protectores para cubrir la nariz.
+        <br>
+        2.- Ubiquemos los albergues temporales, las rutas de evacuación y las zonas seguras en su comunidad.
+        <br>
+        3.- Respetemos los sitios declarados peligrosos.
+        <br>
+        4.- Consultemos a los Comités Municipales y Locales de Emergencias, sobre el sistema de evacuación y los 
+            centros de albergues para animales.
+        <br>
+        5.- Establezcamos una ruta de evacuación, lejos de los ríos y quebradas y los posibles albergues.
+        <br>
+        6.- Comuniquemos a las autoridades locales o al 9-1-1 cualquier anomalía u observación sobre el comportamiento del volcán.
+        <br>
+        7.- No nos dejemos llevar por falsos rumores de personas no autorizadas.
+        <br>
+        8.- Conserva la calma, reúne a tu familia, ponles una identificación.
+        <br>
+        9.- Cuida que puertas y ventanas queden cerradas y coloca una sábana o tela blanca hacia la calle, para indicar 
+            que se trata de un domicilio evacuado.
+        <br>
+        10.- Ve inmediatamente a los centros de reunión, lleva sólo lo indispensable.
+        <br>
+        11.- Si puedes evacuar por tus propios medios, no dudes en hacerlo y dirígete al refugio temporal que te corresponde.
+        <br>
+        13.- Al llegar al refugio temporal, regístrate y ubícate en el lugar que se te indique.
+        <br>
+        14.- Si requieres atención médica, acude a la instalación mas cercana del Sistema de Salud.
+        <br>
+        15.- En el refugio temporal, colabora en lo que se te pida. Mantén contacto con las autoridades, ellas te indicarán 
+             las reglas a seguir durante tu estancia.
+        <br>
+        16.- Si no puedes localizar el centro de reunión o no se presenta el medio de transporte para evacuarte, aléjate del 
+             volcán, caminando por las partes altas hasta un lugar seguro.
+        <br>
+        17.- No te dejes llevar por falsos rumores de personas no autorizadas. Retorno a la normalidad
+        <br>
+        18.- Solo las autoridades pueden decirte, cuando será seguro regresar a tu vivienda.
+        <br>
+        19.- Antes de entrar a tu casa, verifica las condiciones en que se encuentra, en caso de que tengas dudas, consulta con 
+             los cuerpos de emergencia, si el techo tiene ceniza, quítala de inmediato, cuidando que no se vaya al drenaje.
+        <br>
+        20.- No uses la electricidad ni el gas, hasta estar seguro de que las instalaciones estén limpias de ceniza y en buen estado.
+        <br>
+        21.- No comas o bebas nada que sospeches que está contaminado, si tienes dudas consulta a las autoridades correspondientes.
+        <br>
+        22.- Mantente alerta al color del semáforo y sigue las recomendaciones del comité local de Protección Civil.
+        <br>
+        23.- Realiza junto con tu familia tus actividades cotidianas.
+      </p>
+      <div> <!-- 4 -->
+        <img src="imagenes/volcan 12.jpg" width="42%" height="40%">
+        <img src="imagenes/volcan 13.jpeg" width="42%" height="40%">
+      </div><!-- 4 -->
+      </div>
+      <div data-role="footer" data-theme="a">
+        <h4>Juan Manuel Flores Bravo</h4>
+      </div>
+    </div><!-- 2 -->
+  </div> <!--div pagina 1 --> 
+  
+  <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a"> <!--div pagina 1 -->
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a"> <!-- 1 -->
+      <h1>¿Que estados afectaria si hiciera erupcion?</h1>
+    </div> <!-- 1 -->
+    <div data-role="content"> <!-- 2 -->
+      <div align="center"> <!-- 3 -->
+        <h2> "Solo si hace erupcion" </h2>
+      </div> <!-- 3 -->
+      <p>
+        Una erupción de baja a mediana intensidad sería suficiente para crear un desastre en 
+        el entorno de la región del Popocatépetl: la vegetación sería de las primeras afectadas, 
+        la fauna alterada provocaría un desequilibrio ecológico, la agricultura se vería 
+        seriamente dañada y las cosechas se perderían de inmediato; hay que tomar en cuenta que 
+        muchas familias dependen de la agricultura que se desarrolla en el entorno del volcán. 
+        <br>
+        Los centros de actividades recreativas que tienen aguas medicinales, principalmente en el 
+        estado de Morelos, se afectarían por la contaminación de sustancias químicas derivadas de 
+        la actividad volcánica. La población tendría la necesidad de migrar a las grandes ciudades, 
+        con todo lo que ello implica. Por otro lado, se tendría que dar albergue a los damnificados;
+        el problema sería cómo, cuándo y en qué tiempo. Asimismo, las pérdidas materiales y el costo
+        económico serían invaluables.
+        <br>
+        Como es frecuente en México cuando ocurre un desastre, los grupos políticos oportunistas 
+        harían acto de presencia. El problema podría convertirse en un pretexto político, tal y 
+        como ocurre actualmente en Chiapas.
+        <br>
+        <h4>Delegaciones que se verían afectadas:</h4>
+        En caso de erupción, los materiales que llegarían a la Ciudad de México serían prácticamente 
+        piroclsticos, es decir, aéreos, como gases y ceniza volcánica de grano fino, que pueden 
+        llegar a más de 50 km del origen del volcán. 
+        <br>
+        Las delegaciones tentativamente afectadas serían:
+        <br>
+        1.- Milpa Alta 
+        <br>
+        2.- Tláhuac 
+        <br>
+        4.- Xochimilco
+        <br> 
+        5.- Iztapalapa
+        <br> 
+        6.- Tlalpan 
+        <br>
+        7.- Coyoacán 
+        <h4>En menor proporción estarían </h4>
+        1.- Magdalena Contreras
+        <br>
+        2.- Cuajimalpa
+        <br>
+        3.- Álvaro Obregón
+        <br>
+        4.- Miguel Hidalgo
+        <br>
+        5.- Cuauhtémoc
+        <br>
+        6.- Venustiano Carranza
+        <br>
+        7.- Gustavo A. Madero y Azcapotzalco.
+      </p>
+      <div align="center"> <!-- 4 -->
+        <!-- Start WOWSlider.com -->
+          <iframe src="visor/indexwow.html" style="width:1000px;height:440.5px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 
+          auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+        <!-- End WOWSlider.com -->
+      </div><!-- 4 -->
+      </div>
+      <div data-role="footer" data-theme="a">
+        <h4>Juan Manuel Flores Bravo</h4>
+      </div>
+    </div><!-- 2 -->
+  </div> <!--div pagina 1 --> 
+    
+  <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a"> <!--div pagina 1 -->
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a"> <!-- 1 -->
+      <h1>Volcanes del mundo</h1>
+    </div> <!-- 1 -->
+    <div data-role="content" > <!-- 2 -->
+      <div align="center"> <!-- 3 -->
+        <h2> Solo se muestra informacion de dos volcanes</h2>
+      </div> <!-- 3 -->
+      <h4> Monte Vesubio, Italia </h4>
+      <p>
+        Se trata de un volcán activo de tipo vesubiano, con 1.871 metros de altura sobre el nivel del mar. 
+        Hay otros volcanes italianos, hoy activos y más altos que éste (Stromboli, Vulcano, Etna, etc), 
+        pero ninguno ocupa una página tan destacada en la historia de la Vulcanología, como el Vesubio. 
+        En el año 79 d.C, durante el imperio de Tito, parte de la Campania romana se vio asolada por una 
+        tragedia volcánica. El Vesubio, cerca de la actual Nápoles, cubría de cenizas en pocas horas la 
+        ciudad de Pompeya y anegaba en fango las de Herculano y Stabias. La cobertura con que el volcán 
+        recubrió a Pompeya ha facilitado, paradójicamente su conservación casi intacta, lo que ha permitido 
+        a los historiadores, desde el siglo XVIII, conocer muchísimos más detalles de la vida romana. 
+        La mayor parte de las 20.000 personas que murieron en dichas ciudades sufrieron asfixia debido 
+        a los vapores de azufre emanados del cráter del Vesubio. Hoy en día se considera que el Vesubio 
+        está extinguido. Es una atracción turística de primer orden y sus laderas están recubiertas de 
+        flora variada y viñedos. Entre los aspectos más importantes de los descubrimientos arqueológicos 
+        de Pompeya, destaca el grado de conservación extraordinario de los objetos encontrados. La lluvia 
+        de cenizas húmedas que acompañó a la erupción formó un sello hermético sobre la ciudad, conservando 
+        muchas estructuras públicas, templos, teatros, termas, tiendas y casas particulares. Además, entre 
+        las ruinas se encontraron los restos de más de 2.000 víctimas del desastre, incluidos varios 
+        gladiadores encadenados para que no se escaparan o se suicidaran.
+      </p>
+      <div align="center"> <!-- 4 -->
+        <img src="imagenes/volcan 15.jpg" width="40%" height="40%">
+      </div><!-- 4 -->
+      <h4> Volcán Krakatoa, Indonesia </h4>
+      <p>
+        El 27 de agosto de 1883 la isla volcánica de Krakatoa se hundía en el estrecho de 
+        Java y Sumatra, debido a una erupción explosiva del volcán del mismo nombre. 
+        Muchos testigos pensaron que se trataba del Día del Juicio Final. De hecho, el 
+        ruido provocado por la explosión volcánica se pudo oir a unos 4800 kilómetros de 
+        distancia. Su saldo de víctimas fue de 40.000 muertos, la mayoría de habitantes de 
+        islas colindantes, que fueron literalmente barridas por olas de hasta 35 metros de 
+        altura –tsunamis- (las crónicas cuentan cómo un barco militar europeo fue encontrado 
+        en plena selva indonesa, a casi 4 kilómetros de la costa más cercana). La potencia 
+        destructiva de la explosión del volcán Krakatoa, medida en megatones superaría cuatro 
+        veces la bomba nuclear más mortífera creada por el hombre. Desde 1927, 44 años después 
+        del hundimiento en el océano de la isla volcánica Krakatoa, se empezaron a registrar 
+        nuevas erupciones en el fondo del mar. El material volcánico que ha salido a la 
+        superficie ha venido conformando a lo largo del último siglo una nueva isla, conocida 
+        por los habitantes de Java y Sumatra como Anak Krakatoa (el hijo de Krakatoa), del 
+        que dicen será más mortífero aún que su padre, dada la acumulación de fuerzas volcánicas 
+        en el fondo marino que persiste aún hoy en día.
+      </p>
+      <div align="center"> <!-- 4 -->
+        <img src="imagenes/volcan 16.jpg" width="40%" height="40%">
+      </div><!-- 4 -->
+      </div>
+      <div data-role="footer" data-theme="a">
+        <h4>Juan Manuel Flores Bravo</h4>
+      </div>
+    </div><!-- 2 -->
+  </div> <!--div pagina 1 -->  
+</body> <!-- Cierra el primer body -->
+</html>
